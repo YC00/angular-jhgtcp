@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
     ].forEach(icon => {
       this.matIconRegistry.addSvgIcon(
         icon,
-        this.domSanitizer.bypassSecurityTrustResourceUrl(`assets/icons/${icon}.svg`)
+        this.domSanitizer.bypassSecurityTrustResourceUrl(`https://raw.githubusercontent.com/YC00/angular-jhgtcp/master/assets/icons/${icon}.svg`)
       );
     });
   }
